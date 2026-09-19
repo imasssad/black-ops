@@ -1,0 +1,15 @@
+FORGE 115
+=========
+
+Original overlay framework, GSC, and Green Run studio.
+
+Not affiliated with Activision, Treyarch, or Steam.
+Call of Duty and Black Ops II are trademarks of their owners.
+
+This pack does not include:
+- a Steam / VAC process injector
+- kernel drivers
+- memory offsets for t6zm.exe / t6mp.exe
+- the obfuscated third-party menu bytecode from the uploaded zip
+
+Use on private / hosted Zombies only.

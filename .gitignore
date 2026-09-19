@@ -1,0 +1,7 @@
+node_modules
+.vercel
+.tanstack
+screenshots
+.env*
+.node_modules.lock
+.grok/preview.log
