@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "openMenuKey": "F4",
+  "freezeOnMenu": true,
+  "hotkeys": {
+    "godMode": "F1",
+    "giveWeapon": "F3",
+    "skipRound": "F5",
+    "add5000": "F6",
+    "infiniteAmmo": "F7",
+    "instaKill": "F8",
+    "killAll": "F9"
+  },
+  "note": "Studio can export a live copy of this file. GSC reads actionslot 1 as the open key on console; F-keys are the overlay defaults."
+}
