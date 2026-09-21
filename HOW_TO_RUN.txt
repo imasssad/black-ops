@@ -1,0 +1,75 @@
+FORGE 115 — how to run on Windows
+=================================
+
+This is NOT a program you double-click.
+There is no setup.exe, no Node, no npm.
+You copy 4 script files into Plutonium, then host a private Zombies match.
+
+You need
+--------
+1. Call of Duty: Black Ops II on Steam (already installed)
+2. Plutonium (free) — https://plutonium.pw/
+3. File Explorer (already on Windows)
+
+You do NOT need
+---------------
+VS Code, Node, npm, .NET, or anything in the README about "Match / Studio".
+That stuff is a browser demo. Ignore it.
+
+Steps
+-----
+1. Install Plutonium and open it once.
+   Click BLACK OPS II → Zombies → play any map, then quit.
+   That creates the folders.
+
+2. Open File Explorer and paste this in the address bar, then Enter:
+
+   %localappdata%\Plutonium\storage\t6\scripts\zm\forge115
+
+   If Windows says the folder does not exist, create it:
+   storage \ t6 \ scripts \ zm \ forge115
+
+3. From the GitHub folder you downloaded, copy these 4 files:
+
+   black-ops-main\public\gsc\scripts\zm\forge115\_menu.gsc
+   black-ops-main\public\gsc\scripts\zm\forge115\_actions.gsc
+   black-ops-main\public\gsc\scripts\zm\forge115\_config.gsc
+   black-ops-main\public\gsc\scripts\zm\forge115\_hooks.gsc
+
+   Paste them into the forge115 folder from step 2.
+
+   Shortcut: unzip forge115.zip (in the repo root) and copy the
+   scripts\zm\forge115 folder the same way.
+
+4. Also copy the entry script (needed so the menu actually starts):
+
+   FROM:  black-ops-main\public\gsc\maps\mp\gametypes_zm\_clientids.gsc
+   TO:    %localappdata%\Plutonium\storage\t6\scripts\zm\forge115\_clientids.gsc
+
+5. Open Plutonium → Black Ops II → Zombies.
+   Start a PRIVATE / custom match as HOST (not public matchmaking).
+   Official Steam multiplayer will not load these scripts.
+
+6. When you spawn you should see:
+
+      FORGE 115 loaded
+
+   Open the menu with Action Slot 1.
+   On keyboard that is usually the night-vision key (N) or whatever
+   you bound to Action Slot 1 in Options → Controls.
+
+   In the menu:
+   Up / Down  = move
+   Jump / Action Slot 4 = select
+   Melee = back / close
+
+If you see nothing
+------------------
+- You were not host. Only the host gets the menu.
+- Files are in the wrong folder. Check the path in step 2.
+- You joined a public / VAC server. Use a private lobby.
+
+This will not
+-------------
+Inject into Steam t6zm.exe, bypass VAC, or work on official servers.
+Private / hosted Zombies only.
